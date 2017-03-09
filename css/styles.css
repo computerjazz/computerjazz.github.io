@@ -8,12 +8,31 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
+hr {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: #f0f0f0;
+}
+
+.footer-left {
+  margin-left: 50px;
+}
+
+.footer-right {
+  margin-right: 50px;
+}
+
+.footer-icon {
+  font-size: 24px !important;
 }
 
