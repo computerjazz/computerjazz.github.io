@@ -45,13 +45,17 @@ hr {
 
 #info-blurb {
   padding-right: 30px;
+  margin-bottom: 30px;
 }
 
 .info-row {
-  margin-bottom: 30px;
   width: 80%;
 }
 
 #avatar {
   max-height: 150px;
+}
+
+#learnToCode {
+  overflow: hidden;
 }
