@@ -10,8 +10,9 @@ body {
 }
 
 hr {
-  margin-right: 50px;
   margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 50px;
 }
 
 .big-icon {
@@ -40,4 +41,17 @@ hr {
 
 .footer-icon {
   font-size: 24px !important;
+}
+
+#info-blurb {
+  padding-right: 30px;
+}
+
+.info-row {
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+#avatar {
+  max-height: 150px;
 }
