@@ -6,7 +6,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px !important;
+  margin-bottom: 100px !important;
 }
 
 kbd {
@@ -23,15 +23,19 @@ kbd {
   font-size: 60px !important;
 }
 
+.jumbotron .container {
+  justify-content: center;
+}
+
 .footer {
+  display: flex;
+  align-items: center;
   position: absolute;
-  text-align: center;
   bottom: 0;
   width: 100%;
   margin-top: 50px;
-  padding-top: 20px;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  height: 100px;
   background-color: #eaeaea;
 }
 
@@ -41,6 +45,14 @@ kbd {
 
 .info-row {
   width: 80%;
+}
+
+.link-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
 }
 
 .project-row {
@@ -64,6 +76,8 @@ kbd {
 
 #avatar {
   border: 5px solid #ecf0f1;
+  min-height: 100px;
+  min-width: 100px;
 }
 
 #learnToCode {
