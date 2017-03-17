@@ -9,6 +9,9 @@ body {
   margin-bottom: 60px !important;
 }
 
+kbd {
+  background-color: #888888;
+}
 .main hr {
   margin-left: 50px;
   margin-right: 50px;
@@ -29,7 +32,7 @@ body {
   padding-top: 20px;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f0f0f0;
+  background-color: #eaeaea;
 }
 
 .footer-icon {
