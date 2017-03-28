@@ -74,6 +74,10 @@ kbd {
   margin-bottom: 30px;
 }
 
+#learn-blurb {
+  font-size: small;
+}
+
 #avatar {
   border: 5px solid #ecf0f1;
   min-height: 100px;
@@ -82,4 +86,5 @@ kbd {
 
 #learnToCode {
   overflow: hidden;
+  color: #666;
 }
