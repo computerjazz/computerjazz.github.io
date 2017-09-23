@@ -41,6 +41,8 @@ kbd {
 
 .footer-icon {
   font-size: 24px !important;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .info-row {
@@ -69,8 +71,24 @@ kbd {
   margin-right: 30px;
 }
 
-#get-in-touch-button {
+.button-description-text {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+#button-container {
+  display: flex;
+  align-items: center;
   margin-top: 20px;
+}
+
+#get-in-touch-button {
+  margin-left: 10px;
+}
+
+#writing-button {
+  margin-left: 20px;
 }
 
 #info-blurb {
@@ -91,4 +109,8 @@ kbd {
 #learnToCode {
   overflow: hidden;
   color: #666;
+}
+
+#footer-email {
+  margin-left: 10px;
 }
