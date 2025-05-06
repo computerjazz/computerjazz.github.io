@@ -1,124 +1,147 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Merrill | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="max-w-3xl mx-auto px-4 pb-8">
+      <div class="flex flex-row items-center mt-8 mb-8">
+        <img
+          src="./img/avatar.jpg"
+          alt="Daniel Merrill avatar"
+          class="w-24 h-24 rounded-full"
+        />
+        <div class="flex flex-col justify-center ml-4">
+          <h1 class="text-3xl font-bold">Daniel Merrill</h1>
+          <h3 class="text-lg">Software Engineer</h3>
+          <div class="flex gap-2">
+            <a href="https://github.com/computerjazz">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                ></path>
+              </svg>
+            </a>
 
-<link href="css/styles.css" rel="stylesheet">
-<meta name="theme-color" content="#34495e">
+            <a href="https://www.linkedin.com/in/danielmerrill/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                ></path>
+              </svg>
+            </a>
 
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-<link href="css/theme-flatly.css" rel="stylesheet">
-<link href="css/styles.css" rel="stylesheet">
-</head>
-<body>
-
-  <div class='jumbotron text-center' style='background-color: #34495e'>
-    <div class='container profile-row'>
-      <div class='col-md-5'>
-      <hr />
-
-      </div>
-      <div class='col-md-2'>
-        <img src='./img/avatar.jpg' alt='Daniel' class='img-circle img-responsive' id='avatar' />
-      </div>
-      <div class='col-md-5'>
-      <hr />
-      </div>
-    </div>
-    <h1 style='color:white'>Daniel Merrill</h1>
-    <h3 style='color:white'>Software Engineer</h3>
-
-  </div>
-  <div class='container main'>
-
-    <div class='row info-row center-block'>
-
-      <div class='col-md-8'>
-        <div id='info-blurb'>
-          <!-- <p class='lead'>Builder Of Creative Technology</p> -->
-<p>I’m a software engineer with over a decade of experience building cross-platform mobile apps, full-stack web apps, and AI-powered workflows. I love collaborating across disciplines—especially at the intersection of engineering, product, and design.</p>
-
-<p>I’ve worked extensively with React Native, React, and modern JavaScript/TypeScript stacks, but I’m always exploring new tools and technologies—including computer vision, microcontrollers, and infrared sensors. I have authored several open source packages that are used extensively across the React Native ecosystem.</p>
-          <div id="button-container">
-           <a class='btn btn-primary' id='get-in-touch-button' role='button' href='mailto:hi@danielmerrill.com'><span class="fa fa-envelope"></span> <span id="get-in-touch-button">Get in touch!</span></a>
-           <a href="https://medium.com/@Daniel.Merrill"><span id="writing-button" class="button-description-text">I write about code, too!</a>
-         </div>
-       </div>
-      </div>
-
-      <div class='col-md-4 well' id="learnToCode">
-            <p class='lead'>Want to learn to code?</p>
-            <p id='learn-blurb'>Do it! There are so many free online resources.</p>
-            <a href='https://github.com/computerjazz/learn/blob/init/README.md'>Here's how I learned</a>
-      </div>
-
-    </div>
-    <hr />
-  </div>
-
-
-
-  <div class="container projects"=>
-    <div class="row project-row">
-
-      <div class="col-md-4">
-        <img src="./img/Defind_hover_def.png" alt="Hovering over a word to look it up" class="img-responsive pull-right" style="max-height:200px" />
-      </div>
-
-      <div class="col-md-8">
-        <img src="./img/Defind_title.png" alt="Defind title" style="max-height: 75px" />
-          <p class='lead'>Use your camera to look up words on a page.</p>
-          <p>No typing, no menus, no buttons — simply hover your device over a word in your book and its definition will appear on the screen. Defind is designed to be used with one hand, so you never have to put down your book or magazine.</p>
-          <div>
-            <a href='https://play.google.com/store/apps/details?id=com.danielmerrill.defind&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-              <img style='max-height: 50px' alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+            <a href="mailto:hi@danielmerrill.com">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
+                ></path>
+              </svg>
             </a>
           </div>
         </div>
-
       </div>
-      <!--
-      <div class="row" style='margin-top: 20px'>
-          <div class="col-sm-4">
+      <div class="flex flex-col gap-8">
+        <div class="flex flex-col gap-4">
+          <p>
+            I’m a software engineer with over a decade of experience building
+            cross-platform mobile apps, full-stack web apps, and AI-powered
+            workflows. I love collaborating across disciplines—especially at the
+            intersection of engineering, product, and design.
+          </p>
+          <p>
+            I’ve worked extensively with React Native, React, and modern
+            TypeScript stacks, but I’m always exploring new tools and
+            technologies—including computer vision, microcontrollers, and
+            infrared sensors. I have authored several open source packages that
+            are used extensively across the React Native ecosystem.
+          </p>
+        </div>
 
-          </div>
-          <div class="col-sm-8">
-            <img src="./img/gettingWarmer_logo_color.png" alt="Getting Warmer title" style="max-height: 75px" />
-              <p class='lead'>Your friend just hid some treasure. Are you getting warmer?</p>
+        <div>
+          <h2 class="text-2xl font-bold mb-4">Projects</h2>
 
-<p>Your screen changes color as you move around to let you know how close you are to your target. Pay attention to clues to find out if you're on the right track!</p>
+          <div class="grid grid-cols-[128px_2fr] gap-8">
+            <div>
+              <img
+                src="./img/Defind_hover_def.png"
+                alt="Defind app, hovering over a word to look it up"
+                class="max-h-48"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <div>
+                <img
+                  src="./img/Defind_title.png"
+                  alt="Defind app title"
+                  class="max-h-24"
+                />
+              </div>
+              <div>
+                <p class="lead">Use your camera to look up words on a page.</p>
+                <p>
+                  No typing, no menus, no buttons — simply hover your device
+                  over a word in your book and its definition will appear on the
+                  screen. Defind is designed to be used with one hand, so you
+                  never have to put down your book or magazine.
+                </p>
+              </div>
+            </div>
 
-Play hide-and-go-seek in an open field, or hide treasure across continents!
-
-              <div><a href='https://play.google.com/store/apps/details?id=com.danielmerrill.gettingwarmer&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img style='max-height: 50px' alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a></a></div>
+            <div>
+              <img
+                src="./img/getting-warmer-flame.png"
+                alt="Getting warmer flame logo"
+                class="max-h-48"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <div>
+                <img
+                  src="./img/gettingWarmer_logo_color.png"
+                  alt="Getting Warmer title"
+                  class="max-h-24"
+                />
+              </div>
+              <div>
+                <p>
+                  Your friend just hid a treasure for you. Are you getting
+                  warmer?
+                </p>
+                <p>
+                  Pay attention to the color of your screen as you move around
+                  in the world to see if you're on the right track. Play
+                  hide-and-go-seek in an open field, or hide treasure across
+                  continents!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        -->
-  </div>
-  <footer class="footer d-flex container">
-    <div class='row link-wrapper'>
-      <div class='col-md-2'>
-        <a href='mailto:hi@danielmerrill.com'><span class="fa fa-envelope"></span><span id="footer-email">hi@danielmerrill.com</a>
-      </div>
-      <div class='col-md-8'>
-        <kbd> < JavaScript | React Native | React | Node > </kbd>
-      </div>
-      <div class='col-md-2'>
-        <a href="http://github.com/computerjazz"><i class="fa fa-github footer-icon"></i></a>
-        <a href="https://medium.com/@Daniel.Merrill"><i class="fa fa-medium footer-icon"></i></a>
       </div>
     </div>
-  </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
