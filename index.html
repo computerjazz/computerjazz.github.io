@@ -80,19 +80,27 @@
             the intersection of engineering, music, art, and design.
           </p>
         </div>
-
-        <div>
-          <h2 class="text-2xl font-bold mb-4">Projects</h2>
-          <div
-            class="grid grid-cols-[128px_2fr] gap-x-8 gap-y-12"
-            id="project-container"
-          />
+        <div class="flex flex-col gap-12">
+          <div class="flex flex-col">
+            <h2 class="text-2xl font-bold mb-4">Projects</h2>
+            <div
+              class="grid grid-cols-[128px_2fr] gap-x-8 gap-y-12"
+              id="project-container"
+            ></div>
+          </div>
+          <div class="flex flex-col">
+            <h2 class="text-2xl font-bold mb-4">Open Source</h2>
+            <div
+              id="open-source-container"
+              class="grid grid-cols-2 gap-4"
+            ></div>
+          </div>
         </div>
       </div>
     </div>
     <footer></footer>
     <script>
-      const projects = [
+      const personalProjects = [
         {
           title: "Kinetic UI",
           tagline:
@@ -168,8 +176,33 @@
       ];
 
       const projectContainer = document.getElementById("project-container");
+      const openSourceContainer = document.getElementById(
+        "open-source-container"
+      );
+      const openSourceProjects = [
+        {
+          title: "React Native Draggable FlatList",
+          description: "Drag and drop list items",
+          link: "https://www.npmjs.com/package/react-native-draggable-flatlist?activeTab=readme",
+        },
+        {
+          title: "React Native Infinite Pager",
+          description: "Infinitely-swipable pages",
+          link: "https://www.npmjs.com/package/react-native-infinite-pager?activeTab=readme",
+        },
+        {
+          title: "React Native Swipeable Item",
+          description: "Swipeable items in lists",
+          link: "https://www.npmjs.com/package/react-native-swipeable-item?activeTab=readme",
+        },
+        {
+          title: "React Native Swipe Calendar",
+          description: "Infinitely-swipeable calendars",
+          link: "https://www.npmjs.com/package/react-native-swipe-calendar?activeTab=readme",
+        },
+      ];
 
-      projects.forEach((project) => {
+      personalProjects.forEach((project) => {
         const leftElement = document.createElement("div");
         const rightElement = document.createElement("div");
 
@@ -194,6 +227,17 @@
         `;
         projectContainer.appendChild(leftElement);
         projectContainer.appendChild(rightElement);
+      });
+
+      openSourceProjects.forEach((project) => {
+        const projectElement = document.createElement("div");
+        projectElement.innerHTML = `
+          <a href="${project.link}" class="flex flex-col bg-slate-100 p-6 rounded-lg shadow-md transition-transform duration-200 ease-in-out hover:scale-105">
+            <p class="font-semibold">${project.title}</p>
+            <p class="font-thin">${project.description}</p>
+          </a>
+        `;
+        openSourceContainer.appendChild(projectElement);
       });
     </script>
   </body>
