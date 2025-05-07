@@ -115,7 +115,7 @@
                   alt="Defind app title"
                   class="max-h-16"
                 />`,
-          tagline: "Use your camera to look up words on a page.",
+          tagline: "Look up words on a page with your camera.",
           description:
             "No typing, no menus, no buttons — simply hover your device over a word in your book and its definition will appear on the screen. Defind is designed to be used with one hand, so you never have to put down your book or magazine.",
           preview: `
@@ -135,7 +135,7 @@
                   class="max-h-20"
                 />`,
           tagline:
-            "Your friend just hid a treasure for you. Are you getting warmer?",
+            "Your friend just hid a treasure for you—are you getting warmer?",
           description:
             "Pay attention to the color of your screen as you move around in the world to see if you're on the right track. Play hide-and-go-seek in an open field, or hide treasure across continents!",
           preview: `
@@ -160,7 +160,7 @@
           </a>
           `;
 
-        rightElement.innerHTML = `<div class="flex flex-col gap-4">
+        rightElement.innerHTML = `<div class="flex flex-col">
             <a href="${project.link}">
               ${
                 project.titleImage ||
@@ -168,7 +168,7 @@
               }
             </a>
             <div class="flex flex-col gap-4">
-              <p>${project.tagline}</p>
+              <p class="text-l font-thin">${project.tagline}</p>
               <p>${project.description}</p>
             </div>
           </div>
