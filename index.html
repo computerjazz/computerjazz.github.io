@@ -84,7 +84,7 @@
         <div>
           <h2 class="text-2xl font-bold mb-4">Projects</h2>
           <div
-            class="grid grid-cols-[128px_2fr] gap-8"
+            class="grid grid-cols-[128px_2fr] gap-x-8 gap-y-12"
             id="project-container"
           />
         </div>
@@ -117,7 +117,7 @@
                 />`,
           tagline: "A universal remote that belongs on display",
           description:
-            'A mobile app and hardware device handmade from hardwood and glass that can learn and control any device that has an infrared remote. Make all your old tech "smart"".',
+            'A mobile app and hardware device handmade from hardwood and glass that can learn and control any device that has an infrared remote. Make all your old tech "smart".',
           preview: `
                 <img
                   src="./img/remote-lighthouse-logo-color.png"
@@ -179,7 +179,7 @@
           </a>
           `;
 
-        rightElement.innerHTML = `<div class="flex flex-col">
+        rightElement.innerHTML = `<div class="flex flex-col max-w-[400px]">
             <a href="${project.link}">
               ${
                 project.titleImage ||
