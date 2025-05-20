@@ -208,7 +208,12 @@
       }
 
       const avatar = document.getElementById("avatar-underlay");
-      avatar.style.backgroundColor = getColor(0, 2, 0.5);
+      const _numDummyItems = 8;
+      avatar.style.backgroundColor = getColor(
+        Math.floor(Math.random() * _numDummyItems),
+        _numDummyItems,
+        0.5
+      );
 
       const openSourceProjects = [
         {
