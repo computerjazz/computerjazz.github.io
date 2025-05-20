@@ -248,13 +248,26 @@
         projectContainer.appendChild(rightElement);
       });
 
-      openSourceProjects.forEach((project) => {
+      function getColor(i, numItems) {
+        const multiplier = 255 / (numItems - 1);
+        const colorVal = i * multiplier;
+        return `rgb(${colorVal}, ${Math.abs(128 - colorVal)}, ${
+          255 - colorVal
+        })`;
+      }
+
+      openSourceProjects.forEach((project, i, arr) => {
+        const color = getColor(i, arr.length);
+
         const projectElement = document.createElement("div");
         projectElement.innerHTML = `
-          <a href="${project.link}" class="flex flex-col w-full h-full bg-[seashell] p-6 rounded-lg shadow-md transition-transform duration-200 ease-in-out hover:scale-105">
+        <div class="relative transition-transform duration-200 ease-in-out hover:scale-105">
+          <div style="background-color: ${color};" class="opacity-50 absolute w-full h-full rounded-lg border-2 border-stone-500 transform translate-x-2 translate-y-2"></div>
+          <a href="${project.link}" class="flex relative flex-col w-full h-full bg-white p-6 rounded-lg border-2 border-stone-500">
             <p class="font-semibold">${project.title}</p>
             <p class="font-thin">${project.description}</p>
           </a>
+        </div>
         `;
         openSourceContainer.appendChild(projectElement);
       });
